@@ -1,33 +1,43 @@
 {
   "compilerOptions": {
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
+    "module": "ES2015",
+    "lib": [
+      "ES2015"
+    ],
     "useUnknownInCatchVariables": false,
     "sourceMap": false,
     "declaration": true,
+    "declarationMap": true,
     "esModuleInterop": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
+    "moduleResolution": "Node",
     "allowJs": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-		"allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "noEmit": false,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
   },
-  "include": ["src/**/*"],
-	"exclude": [
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
     "node_modules",
     "dist",
     "./**/*.test.(tsx|ts)"

@@ -1,4 +1,4 @@
-import { DIGITS_REGEXP } from "../constants";
+import { DIGITS_REGEXP } from "@/constants";
 
 /**
  * Вычислить контрольную сумму ИНН ЮЛ

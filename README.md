@@ -13,16 +13,16 @@ npm install @gwinkamp/faker
 #### ФИО
 
 ```javascript
-import person from "@gwinkamp/faker";
+import faker from "@gwinkamp/faker";
 
 // Генерация случайного имени. Строка
-person.firstName();
+faker.person.firstName();
 
 // Генерация случайной фамилии. Строка
-person.lastName();
+faker.person.lastName();
 
 // Генерация случайного отчества. Строка
-person.middleName();
+faker.person.middleName();
 
 // Генерация случайного ФИО. Объект:
 // {
@@ -30,51 +30,51 @@ person.middleName();
 //   lastName: "строка",
 //   middleName: "строка"
 // }
-person.fullName();
+faker.person.fullName();
 
 // Генерация случайного ФИО. Строка в формате "Фамилия Имя Отчество"
-person.fullNameString();
+faker.person.fullNameString();
 ```
 
 При желании в каждый метод можно передать пол человека:
 
 ```javascript
-import person from "@gwinkamp/faker";
+import faker from "@gwinkamp/faker";
 import { Gender } from "@gwinkamp/faker/types";
 
 // Сгенерировать ФИО мужчины
-person.fullNameString(Gender.Male);
+faker.person.fullNameString(Gender.Male);
 
 // Сгенерировать ФИО женщины
-person.fullNameString(Gender.Female);
+faker.person.fullNameString(Gender.Female);
 ```
 
 #### Реквизиты
 
 ```javascript
-import requisites from "@gwinkamp/faker";
+import faker from "@gwinkamp/faker";
 
 // Сгенерировать ИНН ЮЛ
-requisites.innUl();
+faker.requisites.innUl();
 
 // Сгенерировать ИНН ФЛ
-requisites.innFl();
+faker.requisites.innFl();
 
 // Сгенерировать ОГРН ЮЛ
-requisites.ogrnUl();
+faker.requisites.ogrnUl();
 
 // Сгенерировать ОГРН ИП
-requisites.ogrnIp();
+faker.requisites.ogrnIp();
 
 // Сгенерировать ОКПО ЮЛ
-requisites.okpoUl();
+faker.requisites.okpoUl();
 
 // Сгенерировать ОКПО ИП
-requisites.okpoIp();
+faker.requisites.okpoIp();
 
 // Сгенерировать СНИЛС
-requisites.snils();
+faker.requisites.snils();
 
 // Сгенерировать СНИЛС в формате "ХХХ-ХХХ-ХХХ ХХ"
-requisites.formattedSnils();
+faker.requisites.formattedSnils();
 ```

@@ -1,27 +1,28 @@
 {
   "name": "@gwinkamp/faker",
   "author": "gwinkamp",
-  "version": "0.5.0",
+  "type": "module",
+  "description": "Библиотека для генерации фековых тетовых данных",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gwinkamp/faker.git"
   },
-  "browser": "./src/index.ts",
-  "types": "./src/index.ts",
   "scripts": {
-    "test": "vitest",
-    "dev": "tsc --watch",
-    "clean": "tsc --build --clean"
+    "test": "vitest run",
+    "build": "vite build"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/node": "^20.10.6",
     "@types/seedrandom": "^3.0.8",
+    "glob": "^10.4.3",
     "seedrandom": "^3.0.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-static-copy": "^1.0.6",
     "vitest": "^1.1.1"
-  },
-  "main": "./index.js",
-  "module": "./esm/index.js"
+  }
 }

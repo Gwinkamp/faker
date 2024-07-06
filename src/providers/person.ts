@@ -1,4 +1,4 @@
-import { Gender } from "../types";
+import { Gender } from "@/types";
 
 const FIRST_NAMES_MALE = [
   "Август",

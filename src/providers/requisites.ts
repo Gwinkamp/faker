@@ -1,11 +1,11 @@
-import { TEST_REGION_CODE } from "../constants";
+import { TEST_REGION_CODE } from "@/constants";
 import {
   calcInnUlCheckSum,
   calcOgrnCheckSum,
   calcOkpoCheckSum,
   calcSnilsCheckSum,
   celcInnFlCheckSum
-} from "../utils/checkSum";
+} from "@/utils/checkSum";
 
 /**
  * Сгенерировать ИНН ЮЛ

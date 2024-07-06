@@ -1,7 +1,7 @@
 import seedrandom from "seedrandom";
 import person from "./person";
 import { describe, test, expect, beforeAll } from "vitest";
-import { Gender } from "../types";
+import { Gender } from "@/types";
 
 beforeAll(async () => {
   seedrandom("1234567890", { global: true });
